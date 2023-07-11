@@ -1,9 +1,6 @@
-# Zadanie 2 - WaterPipes
-B-OOP 2023
+WaterPipes
 
-_English version of the assignment can be found at the end of this document._
-
-Vašou úlohou je naprogramovať hru ako oknovú aplikáciu v jazyku Java s pomocou knižníc AWT a Swing. Používateľské rozhranie aplikácie má pozostávať z:
+Cielom projektu je naprogramovať hru ako oknovú aplikáciu v jazyku Java s pomocou knižníc AWT a Swing. Používateľské rozhranie aplikácie má pozostávať z:
 
 * canvasu (alebo JPanel) - ktorý bude tvoriť hernú plochu
 * bočné menu (jeho umiestnenie si zvoľte sami, teda môže byť aj hore, alebo dole)
@@ -28,55 +25,12 @@ Stlačením klávesy R na klávesnici vieme tiež hru reštartovať, a pomocou k
 Pri kontrole správnej cesty vyznačiť od štartu všetky správne otočené trubky až po prvú chybnú.
 
 Pri zadaní môžte používať LOMBOK.
-## Hodnotenie
 
-Zadanie je hodnotené 15 bodmi. 5 bodov je za funkčnosť zadania, 5 bodov za Princípy OOP a 5 bodov za správne používanie knižnice SWING. **Odovzdaný program musí byť skompilovateľný, inak je
-hodnotený 0 bodmi**. Skompilovateľnosť zadania kontroluje aj github pipeline. Hlavný dôraz v hodnotení sa kladie na objektový prístup a princípy,
-okrem iného:
 
-* vhodné pomenovanie tried a metód v jednotnom jazyku (názvy tried s veľkým počiatočným písmenom, názvy metód s malým),
-* vhodné použitie modifikátorov prístupu (public, private, poprípade protected) na obmedzenie prístupu k metódam a atribútom,
-* využitie dedenia a polymorfizmu,
-* použitie výnimiek na ošetrenie nedovoleného správania (nehádzať a nezachytávať všeobecnú triedu Exception),
-* nepoužívajte nested classy,
-* vo vašich triedach nevytvárajte statické metódy ani nekonštantné statické premenné (v zadaní nie sú potrebné),
-* v hlavnej triede (main) nevytvárajte žiadnu logiku, iba vytvorte nový objekt.
-* vo svojom riešení môžete použiť knižnicu lombok a jej anotácie. Potrebná dependencia je už pridaná v _pom.xml_ súbore.
+-----------------------------
+WaterPipes
 
-Niektoré z vecí, za ktoré sme minulý rok strhli po 0,5 - 1 bode:
-
-* Po spustení je okno prázdne, vykreslí sa až po resize
-* Nie je nastavená počiatočná velkosť okna
-* Nie je naimplementovaný niektorý z listenerov (možnosť stratiť až 3 body)
-* Nefunguje reset
-* Chybné vykreslovanie
-* Neodchytené exceptions
-* Nenastavený exit okna
-* Nesprávna detekcia výhry
-* Kód v main metóde
-* Nevyužitie OOP princípov
-* Po resete prestane fungovať niektorý z listenerov
-* Otvaranie noveho okna pri resete
-* Listenery ako Nested Triedy
-* Hra sa nedá dohrať
-* Frame.setVisible je zavolaný moc skoro
-
-Prípadne sú pri nedostatočnej implementácií struhnuté body za OOP za nedostatočnú implementáciu.
-
-**Pri zadaní sa kontroluje originalita zadaní, a všetky zadania so zhodou vyššou ako 65% sú hodnotené 0 bodmi.**
-
-## Odovzdávanie
-Zadanie si naklonujte z repozitára zadania výhradne pomocou poskytnutej linky cez GitHub Classroom (pokiaľ si vygenerujete vlastný repozitár pomocou tlačidla "Use this template" z template repozitára, my váš repozitár neuvidíme a nebudeme ho hodnotiť!). Svoje vypracovanie nahrajte do pre vás vytvoreného repozitára pre toto zadanie pomocou programu Git (git commit + git push).
-Skontrolujte si, či sa váš repozitár nachádza pod skupinov **Interes-Group**, inak nemáme prístup ku vášmu repozitáru a zadanie sa nepovažuje za odovzdané. Vypracovanie môžete "pusho-vať" priebežne. Hodnotiť sa bude iba _master_ branch. Zadanie je nutné vypracovať do **23.4.2023 23:00**.
-
-V projekte upravujte iba súbory v priečinku _src/main_ a jeho podpriečinkoch. Ostatné súbory je upravovať zakázané (predovšetkým súbory _pom.xml_, súbory obsahujúce github pipeline-y a súbory obsahujúce automatizované testy).
-
-Vo svojom github účte si nastavte svoje meno alebo AIS login (settings > profile > name), aby bolo možné priradiť riešenie ku študentovi. **Pokiaľ nebude možné spárovať študenta s riešením je zadanie hodnotené 0 bodmi!**
-
-# Assignment 2 - WaterPipes
-B-OOP 2023
-
-Your task is to create the game as a window application in Java using the AWT and Swing libraries. The user interface of the application should consist of:
+Task is to create the game as a window application in Java using the AWT and Swing libraries. The user interface of the application should consist of:
 
 * canvas (or JPanel) - which will draw the game board
 * side menu (you can choose the placement of this menu, it can also be on the top, or at the bottom of the window)
@@ -101,51 +55,3 @@ By pressing the R key on the keyboard, we can also restart the game, and use the
 When checking the correct path, mark from the start all the correctly turned pipes up to the first faulty one.
 
 You can use LOMBOK.
-
-## Grading
-You can get 15 points for this assignment. 5 points are given for fulfilling the outlined rules of the game, 5 points are given for complying with OOP principles, 5 points are given for correct usage of the AWT and Swing libararies.
-**The program must be able to compile, otherwise 0 points are given for the assigment.**
-The github pipeline checks whether the program can be compiled. The main focus during grading is put on object-oriented approach and OOP principles used by the solution.
-Including, but not limited to:
-* appropriate naming of classes, methods and variables in a single language (class names starting with a capital letter, method names starting with a lowercase letter),
-* appropriate use of access modifiers (public, private, or protected) when restricting access to class methods and attributes,
-* the use of inheritance and polymorphism,
-* usage of exceptions when handling undesired behavior (do not catch or throw the instances of the generic Exception class),
-* don't use nested classes,
-* don't use static methods, or non-constant static variables (you don't need them to complete the assignment),
-* don't put any logic into the main method and its class. The main method should only be used to create a new object,
-* you can use the lombok library and its annotations in your solution. The neccessary dependency is already present in the pom.xml file.
-
-Issues that resulted in a 0.5 - 1 point reduction last year:
-
-* The application shows an empty window when it starts and the content is displayed only after the window is resized
-* The initial dimensions of the window are not set
-* Some of the required listeners are not implemented
-* The game cannot be reset
-* Drawing glitches
-* Uncaught exceptions
-* The program does not exit, when the window closes
-* The win condition is not checked correctly
-* Code in the main method
-* Lack of OOP principles
-* Some of the listeners are broken after the game resets
-* A new window is opened when the game resets
-* Listeners are implemented with nested classes
-* The game cannot be finished
-* Frame.setVisible is called too early
-
-If the assignment lacks a substantial part of the specified functionality additional points are substracted.
-
-**The originality of the code is checks, all assignments with a more than 65% match are awarded with 0 points.**
-
-## Handing in the assigment
-
-Clone the assignment from the repository created from this template by the provided link trough GitHub Classroom (if you create your own repository with the "use this template" button, we won't be able to see your repository, and we won't be able to grade it!). Upload your solutions to your repository using the Git version control system (git commit + git push).
-
-Make sure, that your repository was created under the **Interes-Group** group, otherwise we won't be able to access your repository, and the assignment will not be graded.
-
-You can push commits to the repository while you work - you don't have to push everything at once. Only the code in the _master_ branch will be graded. You have until **23.4.2023 23:00** to complete the assignment.
-
-Only edit files in the _src/main_ folder or its sub-folders. You mustn't change any other files in the repository (especially the _pom.xml_ file, and the github pipeline files).
-
-You have to have your name set in your github account (settings > profile > name), so that we can match students with their assignments. **If we are unable to match a student with their assignment, the student will receive 0 points for the assignment!**
