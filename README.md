@@ -1,4 +1,4 @@
-**##WaterPipes**
+**WaterPipes**
 
 Cielom projektu je naprogramovať hru ako oknovú aplikáciu v jazyku Java s pomocou knižníc AWT a Swing. Používateľské rozhranie aplikácie má pozostávať z:
 
@@ -28,7 +28,7 @@ Pri zadaní môžte používať LOMBOK.
 
 
 -----------------------------
-**##WaterPipes**
+**WaterPipes**
 
 Task is to create the game as a window application in Java using the AWT and Swing libraries. The user interface of the application should consist of:
 
